@@ -1,0 +1,312 @@
+{% extends 'core/base.html'%}
+
+    {% block title %}CODERC | Capacitacion para el Desarrollo Empresarial y Regional de Colombia.{% endblock%}
+    {%block activeNavbarService%}active{% endblock %}
+
+    {% block header %}
+    {% load static %}
+    <!-- Header -->
+    <header class="header header-inverse h-fullscreen pb-80" style="background-image: url({% static 'core/assets/img/capacitacion.jpg'%});">
+      <div class="container text-center">
+
+        <div class="row h-full">
+          <div class="col-12 col-lg-8 offset-lg-2 align-self-center">
+
+            <h1 class="display-1 hidden-sm-down">Capacitación</h1>
+            <h1 class="fs-40 hidden-md-up">Capacitación</h1>
+            <p class="fs-20 w-600 mx-auto hidden-sm-down"><b><i>“Estamos comprometidos con un buen servicio”.<b><i></p>
+            <p class="fs-16 hidden-md-up">“Estamos comprometidos con un buen servicio”.</p>
+
+            <hr class="w-80">
+
+            <a class="btn btn-xl btn-round btn-white w-300 mr-12 hidden-sm-down" href="#">Formación</a>
+            <a class="btn btn-lg btn-round btn-white w-250 hidden-md-up" href="#">Formación Virtual</a>
+          </div>
+
+          <div class="col-12 align-self-end text-center">
+            <a class="scroll-down-1 scroll-down-inverse" href="#" data-scrollto="section-intro"><span></span></a>
+          </div>
+
+        </div>
+
+      </div>
+    </header>
+    <!-- END Header -->
+    {% endblock %}
+
+
+    {% block mainContainer %}
+    <!-- Main container -->
+    <main class="main-content">
+
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Features
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section bg-gray" id="section-features">
+        <div class="container">
+          <header class="section-header">
+            <small>Servicios</small>
+            <h2>Soluciones para tu comunidad</h2>
+            <hr>
+            <p class="lead">“Estamos comprometidos con un buen servicio”.</p>
+          </header>
+
+
+          <div class="row gap-5">
+
+
+            <div class="col-12 col-md-4">
+              <ul class="nav nav-vertical">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#tab-1">
+                    <h6>Formación para el Trabajo y Desarrollo Humano</h6>
+                    <p>Complementa tus competencias y habilidades profesionales en formación tecnológica, uso de distintas plataformas para eficiencia empresarial, entre otros. </p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#tab-2">
+                    <h6>Modalidades:</h6>
+                    <p>
+                    <ul><b>
+                       <li>Seminarios</li>
+                       <li>Talleres</li>
+                       <li>Cursos</li>
+                       <li>Diplomados</li>
+                       <li>Presenciales o virtuales.</li>
+                     </p>
+                     </ul></b>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#tab-3">
+                    <h6>investigación</h6>
+                    <p>Mantenemos un equipo profesional en continua investigación para brindar el mejor servicio con nuevas tecnologias</p>
+                  </a>
+                </li>
+            </ul>
+            </div>
+
+
+            <div class="col-12 col-md-8 align-self-center">
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab-1">
+                  <img class="shadow-3" src="{% static 'core/assets/img/project.jpg'%}" alt="...">
+                </div>
+
+                <div class="tab-pane fade" id="tab-2">
+                  <img class="shadow-3" src="{% static 'core/assets/img/support.jpg'%}" alt="...">
+                </div>
+
+                <div class="tab-pane fade" id="tab-3">
+                  <img class="shadow-3" src="{% static 'core/assets/img/clients.jpg'%}" alt="...">
+                </div>
+
+                <div class="tab-pane fade" id="tab-4">
+                  <img class="shadow-3" src="{% static 'core/assets/img/demo/skype/tab-2.jpg'%}" alt="...">
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+
+
+          <div class="text-center mt-50">
+            <a class="btn btn-lg btn-primary" href="{% url 'contacto' %}">Descubre Nuestros Servicios</a>
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Worldwide Adoption
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section pb-0 overflow-hidden hidden-sm-down">
+        <div class="container">
+          <header class="section-header">
+            <small><strong>Estadisticas CODERC</strong></small>
+            <h2>Experiencia a tu servicio</h2>
+            <hr>
+            <p class="lead">Nuestra metodología por proyectos, enfocada la comunidad y en la mejora continua, nos ha permitido acumular experiencias exitosas
+              y clientes satisfechos durante más de 15 años.</p>
+          </header>
+
+          <div class="row gap-y text-center">
+
+            <div class="col-md-4 d-flex flex-column">
+              <div class="mb-60">
+                <p class="text-info fs-50 mb-0">10.000+</p>
+                <p>Personas Capacitadas</p>
+              </div>
+              <div class="px-20 mt-auto">
+                <img class="shadow-4 opacity-80" src="{% static 'core/assets/img/project.jpg'%}" alt="..." data-aos="slide-up" data-aos-delay="300">
+              </div>
+            </div>
+
+            <div class="col-md-4 d-flex flex-column">
+              <div class="mb-7">
+                <span class="text-info fs-50">100+</span><br>
+                <p>Proyectos</p>
+              </div>
+              <div class="mt-auto">
+                <img class="shadow-6" src="{% static 'core/assets/img/support.jpg'%}" alt="..." data-aos="slide-up">
+              </div>
+            </div>
+
+            <div class="col-md-4 d-flex flex-column">
+              <div class="mb-7">
+                <span class="text-info fs-50">100%</span><br>
+                <p>Clientes Satisfechos</p>
+              </div>
+              <div class="px-20 mt-auto">
+                <img class="shadow-4 opacity-80" src="{% static 'core/assets/img/clients.jpg'%}" alt="..." data-aos="slide-up" data-aos-delay="600">
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Download Now
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section section-inverse" id="section-download" style="background-image: linear-gradient(to right, #0D3A7B 0%, #4689E8 100%);">
+        <div class="container-fluid">
+          <header class="section-header">
+            <small><strong>Tu y tu comunidad LO MERECEN</strong></small>
+            <h2 class="fs-45">Contáctanos</h2>
+            <hr>
+            <p class="lead">Nuestro COMPROMISO es APOYARTE.</p>
+          </header>
+
+          <p class="text-center">
+            <a class="btn btn-lg btn-primary w-250" href="page-contact.html">Contáctanos</a><br>
+      <!--      <small><a class="text-white" href="#">or download <span class="mark-border">Browser Extension</span></a></small>!-->
+          </p>
+        </div>
+      </section>
+
+
+
+
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | FAQ
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section" id="section-faq">
+        <div class="container">
+          <header class="section-header">
+            <small>FAQ</small>
+            <h2>Preguntas Frecuentes</h2>
+            <hr>
+            <p class="lead">Contáctanos sin dudar, si no puedes encontrar una respuesta a tu pregunta</p>
+          </header>
+
+
+
+          <div class="accordion" id="accordion-general">
+            <div class="card">
+              <h5 class="card-title">
+                <a data-toggle="collapse" data-parent="#accordion-general" href="#collapse-general-1">Puedo tomar las capacitaciones en cualquier momento?</a>
+              </h5>
+
+              <div id="collapse-general-1" class="collapse in">
+                <div class="card-block">
+                  Podermos coordinar tiempos para apoyarte, complementa tus competencias y habilidades profesionales. PRESENCIAL Ó VIRTUAL APRENDE A TU RITMO Y DESDE CUALQUIER PARTE DEL MUNDO
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card">
+              <h5 class="card-title">
+                <a data-toggle="collapse" data-parent="#accordion-general" href="#collapse-general-2">Puedo encontrar capacitación de Emprendimiento Efectivo y Sostenible?</a>
+              </h5>
+
+              <div id="collapse-general-2" class="collapse">
+                <div class="card-block">
+                  Si, apoyamos la planificación, Formulación y puesta en marcha sostenible de tu Emprendimiento, con más de 10 años de experiencias exitosas en convocatorias de financiación de proyectos.
+
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card">
+              <h5 class="card-title">
+                <a data-toggle="collapse" data-parent="#accordion-general" href="#collapse-general-3">¿Qué modalidades manejan?</a>
+              </h5>
+
+              <div id="collapse-general-3" class="collapse">
+                <div class="card-block">
+                  Seminarios, Talleres, y Diplomados presenciales o virtuales; nos ajustamos a tus necesidades.
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card">
+              <h5 class="card-title">
+                <a data-toggle="collapse" data-parent="#accordion-general" href="#collapse-general-4">Cuáles temas son su especialidad?</a>
+              </h5>
+
+              <div id="collapse-general-4" class="collapse">
+                <div class="card-block">
+                  Formulación de Proyectos, Productividad, Mercadeo, Emprendimiento, Liderazgo, Calidad, entre otros.
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card">
+              <h5 class="card-title">
+                <a data-toggle="collapse" data-parent="#accordion-general" href="#collapse-general-5">¿Dónde puedo obtener más información rapidamente?</a>
+              </h5>
+
+              <div id="collapse-general-5" class="collapse">
+                <div class="card-block">
+                  317 7572971, llamanos o escribenos al WhatsApp o al correo director@coderc.org.
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+
+    </main>
+    <!-- END Main container -->
+    {% endblock %}

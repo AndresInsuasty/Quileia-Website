@@ -1,0 +1,196 @@
+{% extends 'core/base.html' %}
+{% block title %}QUILEIA - Impulsamos el Desarrollo Tecnológico, Social y Cultural de Colombia,
+mediante la gestión, asesoría, formulación, evaluación y el liderazgo efectivo de proyectos y planes de negocio
+sostenibles {% endblock%}
+
+{%block activeNavbarHome%}active{% endblock %}
+
+{% block header %}<!-- Header -->
+{% load static %}
+<header class="header fadeout header-inverse pb-0 h-fullscreen" style="background-image: linear-gradient(to bottom, #2750A2 65%, #EBF1F5 100%);">
+  <canvas class="constellation"></canvas>
+
+  <div class="container">
+    <div class="row h-full">
+      <div class="col-12 text-center align-self-center">
+        <h1 class="fs-50 fw-600 lh-15 hidden-sm-down">QUILEIA <span class="text-primary" data-type="Impulsamos el desarrollo, social, tecnológico,
+          de Colombia, mediante la gestión, asesoría, formulación, evaluación y el liderazgo, efectivo de proyectos, y planes de negocio sostenibles."></span></h1>
+        <h1 class="fs-35 fw-600 lh-15 hidden-md-up">QUILEIA <br><span class="text-primary" data-type="Impulsamos el desarrollo, social, tecnológico,
+          de Colombia, mediante la gestión, asesoría, formulación, evaluación y el liderazgo, efectivo de proyectos, y planes de negocio sostenibles."></span></h1>
+        <br>
+        <p class="fs-20 hidden-sm-down"><strong>Impulsamos </strong> el desarrollo, social y tecnológico de Colombia.
+
+        <p class="fs-16 hidden-md-up"><strong>Impulsamos </strong> el desarrollo, social y tecnológico de Colombia.
+
+        <br>
+        <br>
+        <p class="fs-20 hidden-sm-down"><strong>Mediante </strong> la gestión, asesoría, formulación, evaluación y el liderazgo, efectivo de proyectos, y planes de negocio sostenibles.</p>
+        <p class="fs-16 hidden-md-up"><strong>Mediante </strong> la gestión, asesoría, formulación, evaluación y el liderazgo, efectivo de proyectos, y planes de negocio sostenibles.</p>
+        <br>
+        <hr class="w-60 hidden-sm-down">
+
+        <a class="btn btn-xl btn-round btn-primary fs-20 fw-500 w-350 shadow-3 hidden-sm-down" href="{% url 'about' %}">Conoce Más</a>
+        <a class="btn btn-lg btn-round btn-primary w-250 shadow-3 hidden-md-up" href="{% url 'about' %}">Conoce Más</a>
+        <br>
+          <p class="mt-2 mt-md-4"><font size="5"><i>"¿Buscas Soluciones? Conoce nuestros servicios</i></font></a></p>
+    </div>
+
+      <div class="col-12 align-self-end text-center pb-70">
+        <a class="scroll-down-2 scroll-down-inverse" href="#" data-scrollto="section-demo"><span></span></a>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- END Header -->{% endblock %}
+
+{% block mainContainer %}
+<!-- Main container -->
+<main class="main-content">
+
+
+
+
+  <!--
+  |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+  | Sample Landing Pages
+  |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+  !-->
+  <section class="section overflow-hidden" id="section-demo">
+    <div class="container">
+      <header class="section-header">
+        <small>Soluciones QUILEIA</small>
+        <h2>Servicios QUILEIA</h2>
+        <hr>
+        <p class="lead"><b>Brindamos servicios dentro del ambito tecnologico, enfocados al area de desarrollo web e inteligencia artificial aplicada.
+        </b></p>
+      </header>
+
+
+      <div class="row gap-y text-center">
+
+        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+          <p><a href="{% url 'asesoria' %}"><img class="shadow-2 hover-shadow-5" src="{% static 'core/assets/img/asesoriaCode.jpg'%}" alt="demo bootstrap landing"></a></p>
+          <p><strong>Asesoría, consultoría, formulación, gestión, ejecución y evaluación de proyectos y planes de negocio, que impulsen el desarrollo social y
+            tecnológico de Colombia.</strong></p>
+        </div>
+
+
+        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <p><a href="{% url 'capacitacion' %}"><img class="shadow-2 hover-shadow-5" src="{% static 'core/assets/img/capacitacion2.jpg'%}" alt="demo app landing"></a></p>
+        <p><strong>Formación para el Trabajo y Desarrollo Humano. Conoce las mejores opciones para ti.</strong></p>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <p><a href="{% url 'blog' %}"><img class="shadow-2 hover-shadow-5" src="{% static 'core/assets/img/blog1.jpg'%}" alt="demo app landing"></a></p>
+        <p><strong>Blog - Compartimos información para estar actualizados y en contacto con las nuevas tendencias en tecnólogia.</strong></p>
+        </div>
+
+        <header class="section-header">
+          <small>VALORES QUIULEIA</small>
+          <h2>Fundamentados en valores impulsamos el desarrollo social:</h2>
+
+        <p class="lead"> 
+        <b><I><i>
+        <ol>
+        <li value="1"><p align="left">Amor por el desarrollo social y tecnológico.
+        <li><p align="left">Profesionalismo en la gestión de proyectos.
+        <li><b><p align="left">Rigurosidad en el cumplimiento de objetivos.
+        </b></i></I>
+        <br><br><b><i><I>
+          Con amor, profesionalismo, rigurosidad y experticia apoyamos el cumplimiento de los planes, programas, proyectos y objetivos de desarrollo.
+        </b></i></I><p>
+        </header class="section-header">
+
+              <header class="section-header">
+          <small>RAZONES PARA TRABAJAR CON QUILEIA</small>
+          <h2>7 Razones para trabajar con QUILEIA:</h2>
+
+      <p class="lead">
+      <b><I><i>
+      <ol>
+      <li value="1"><p align="left">Amamos servir a la comunidad con responsabilidad y honradez.
+      <li><p align="left">Contamos con amplia experiencia en el trabajo desarrollo web en distintos ambitos de programación.
+      <li><p align="left">Cumplimos objetivos y entregamos resultados de manera clara, organizada y oportuna.
+      <li><p align="left">Entregamos Informes transparentes, completos y soportados.
+      <li><p align="left">Trabajamos bajo un Sistema de Gestión de Calidad implementado con proyección a la certificación ISO 9001.
+      <li><p align="left">Ejecutamos procesos de formación efectivos, aplicando metodologías innovadoras, adaptadas y validadas en proyectos comunitarios.
+      <li><p align="left">Tenemos personal profesional en continua investigación para brindar nuevos y aun mejores servicios con un amplio soporte.
+      <b>
+      </b></i></I>
+    </header class="section-header">
+             <a href="{% url 'contacto' %}"><i><p style="color:#467FD8";><p align="left"><u>Programemos una reunión gratuita</u></p></i></a>
+
+
+
+<!--          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+          <p><a href="demo-github.html"><img class="shadow-2 hover-shadow-5" src="assets/img/demo-github-sm.jpg" alt="demo github landing"></a></p>
+          <p><strong>3d Realidad Aumentada</strong></p>
+        </div>
+
+
+        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+          <p><a href="demo-helpato.html"><img class="shadow-2 hover-shadow-5" src="assets/img/demo-helpato-sm.jpg" alt="demo helpato landing"></a></p>
+          <p><strong>Soporte Técnico informático - Outsourcing para Empresas</strong></p>
+        </div>
+
+
+        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <p><a href="demo-gmail.html"><img class="shadow-2 hover-shadow-5" src="assets/img/demo-gmail-sm.jpg" alt="demo helpato landing"></a></p>
+          <p><strong>Posicionamiento Seo/Sem</strong></p>
+        </div>
+
+
+      </div>
+
+!-->
+    </div>
+  </section>
+
+
+  <!--
+  |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+  | Partner 5
+  |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+  !-->
+  <section class="section" style="background-color: #F9F9F9">
+    <div class="container">
+      <header class="section-header">
+        <h2>Clientes QUILEIA</h2>
+        <hr>
+        <p class="lead"><b>La mejor carta de presentación es la Satisfacción de nuestros Clientes.</b></p>
+      </header>
+
+
+      <div class="swiper-container partner" data-autoplay="1000" data-slides-per-view="4">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="{%static 'core/assets/img/partner-1.png'%}" alt="..."></div>
+          <!-- <div class="swiper-slide"><img src="{%static 'core/assets/img/partner-3.png'%}" alt="..."></div>
+          <div class="swiper-slide"><img src="{%static 'core/assets/img/partner-5.png'%}" alt="..."></div>
+          <div class="swiper-slide"><img src="{%static 'core/assets/img/partner-6.png'%}" alt="..."></div>
+          <div class="swiper-slide"><img src="{%static 'core/assets/img/partner-10.png'%}" alt="..."></div>
+          <div class="swiper-slide"><img src="{%static 'core/assets/img/partner-11.png'%}" alt="..."></div>
+          <div class="swiper-slide"><img src="{%static 'core/assets/img/partner-12.png'%}" alt="..."></div>
+          <div class="swiper-slide"><img src="{%static 'core/assets/img/partner-13.png'%}" alt="..."></div>
+          <div class="swiper-slide"><img src="{%static 'core/assets/img/partner-18.png'%}" alt="..."></div>
+          <div class="swiper-slide"><img src="{%static 'core/assets/img/partner-19.png'%}" alt="..."></div>
+          <div class="swiper-slide"><img src="{%static 'core/assets/img/partner-20.png'%}" alt="..."></div>
+          <div class="swiper-slide"><img src="{%static 'core/assets/img/partner-21.png'%}" alt="..."></div>
+          <div class="swiper-slide"><img src="{%static 'core/assets/img/partner-24.png'%}" alt="..."></div>
+          <div class="swiper-slide"><img src="{%static 'core/assets/img/partner-14.png'%}" alt="..."></div> -->
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+</main>
+<!-- END Main container -->
+{% endblock %}

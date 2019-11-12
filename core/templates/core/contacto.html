@@ -1,0 +1,133 @@
+{% extends 'core/base.html' %}
+
+{% block title %}CODERC - Contacto{% endblock %}
+{%block activeNavbarContact%}active{% endblock %}
+
+{% block header %}
+{% load static %}
+<!-- Header -->
+<header class="header header-inverse h- pb-80"
+  style="background-image: url({% static 'core/assets/img/contact1.jpg'%});">
+
+  <div class="container text-center">
+
+    <div class="row">
+      <div class="col-12 col-lg-8 offset-lg-2">
+
+        <h1>Contáctanos, sin aplazamientos</h1>
+        <p class="fs-20 opacity-70"><i><b>Estamos a un paso de apoyarte, sólo llamanos o escribenos...</i></b></p>
+
+      </div>
+    </div>
+
+  </div>
+</header>
+<!-- END Header -->
+{% endblock %}
+
+
+
+{% block mainContainer %}
+<!-- Main container -->
+<main class="main-content">
+
+
+
+
+  <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Contact form
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+  <div class="section">
+    <div class="container">
+
+      <div class="row gap-y">
+        <div class="col-12 col-md-6">
+
+          <form action="assets/php/contact.php" method="POST" data-form="mailer">
+            <div class="alert alert-success">Recibimos tu mensaje y pronto estaremos en contacto.</div>
+
+            <div class="form-group">
+              <input class="form-control form-control-lg" type="text" name="cf_name" placeholder="Nombres">
+            </div>
+
+            <div class="form-group">
+              <input class="form-control form-control-lg" type="email" name="cf_email" placeholder="Correo Electrónico">
+            </div>
+
+            <div class="form-group">
+              <textarea class="form-control form-control-lg" name="cf_message" rows="4"
+                placeholder="Mensaje"></textarea>
+            </div>
+
+
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Enviar Solicitud</button>
+          </form>
+
+        </div>
+
+
+        <div class="col-12 col-md-5 offset-md-1">
+          <div class="bg-grey h-full p-20">
+            <b>
+              <p>Contáctanos.</p>
+              <p>Lunes a Sábado - 8 am a 6 pm.</p>
+
+              <span class="d-inline-block w-20 text-lighter" title="Phone">
+                T:</span>
+              <span class="fs-14">WhatsApp 322 700 1670</span>
+              <div>
+
+                <span class="d-inline-block w-20 text-lighter" title="Phone">
+                  T:</span>
+                <span class="fs-14">Oficinas 555 555 55 </span>
+                <div>
+
+                  <span class="d-inline-block w-20 text-lighter" title="Email">
+                    E:</span>
+                  <span class="fs-14">director@quileia.com</span></p>
+                  <div>
+                    <p class="lead">Centro de Negocios
+                      <br>Bogota, Colombia</p>
+                  </div>
+            </b>
+
+            <div class="btn-whatsapp">
+              <a href="https://api.whatsapp.com/send?phone=573227001670" target="_blank">
+                <img src="http://s2.accesoperu.com/logos/btn_whatsapp.png" alt="">
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+
+  <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Map
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+  </div>
+  </div>
+  <iframe
+    src="https://maps.google.com/maps?q=Bogota&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    width="1900" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+
+
+
+
+
+</main>
+<!-- END Main container -->
+{% endblock %}
